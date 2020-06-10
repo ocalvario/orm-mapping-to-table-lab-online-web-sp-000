@@ -32,11 +32,10 @@ class Student
  
   end
   
-  def self.drop_table
-    sql = <<-SQL
-      DROP TABLE students
-    SQL
-  
+    def self.create(name, grade)
+    song = Student.new(name, grade)
+    student.save
+    student
   end
   
  
